@@ -1,0 +1,174 @@
+body {
+  margin: 0 0 0 0;
+  background-color: #e3fdfd;
+}
+h1 {
+  font-size: 4em;
+}
+hr {
+  width: 70%;
+  height: 1px;
+  display: block;
+  border-bottom: none;
+  color: lightgrey;
+  border-top: 5px dotted;
+  margin: 20px auto 20px auto;
+}
+
+p {
+
+  width: 75%;
+  margin: auto auto;
+}
+.radioLabel {
+  display: inline-block;
+  text-align: center;
+}
+.radioLabel label{
+  display: block;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: #95e1d3;
+}
+
+.nav {
+  height: 2em;
+  font-size: 2em;
+}
+img {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+img:hover {
+  width: 75%
+}
+button {
+    display: block;
+    margin: auto auto;
+}
+
+textarea {
+  width: 70%;
+}
+.nav-left {
+  text-decoration: none;
+  position: absolute;
+  left: 1%;
+  top: 1%;
+}
+.nav-right2 {
+    text-decoration: none;
+    position: absolute;
+    right: 1%;
+    top: 100%;
+}
+
+.nav-right {
+  text-decoration: none;
+  position: absolute;
+  right: 1%;
+  top: 1%;
+}
+.nav:hover {
+  color: black;
+}
+/*Decide if you want to add a background here later*/
+.header {
+  display: inline;
+  grid-area: header;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-bottom: 3%;
+  text-align: center;
+}
+.one {grid-area: one;}
+.two {grid-area: two;}
+.three {  grid-area: three;}
+.four {  grid-area: four;}
+.five {  grid-area: five;}
+.six {  grid-area: six;}
+.seven {  grid-area: seven;}
+.eight {  grid-area: eight;}
+.nine {  grid-area: nine;}
+.ten {  grid-area: ten;}
+.eleven {  grid-area: eleven;}
+.twelve {  grid-area: twelve;}
+.row {
+  display: grid;
+  grid-template-areas:
+  'one'
+  'two'
+  'three'
+  'four'
+  'five'
+  'six'
+  'seven'
+  'eight'
+  'nine'
+  'ten'
+  'eleven'
+  'twelve';
+  grid-gap: 20px;
+  padding-bottom: 50px;
+}
+
+.first0 {grid-area: first;}
+.first1 {grid-area: second;}
+.first2 {grid-area: third;}
+.first3 {grid-area: fourth;}
+.first4 {grid-area: fifth;}
+.container {
+  display: grid;
+  grid-template-areas:
+  'first'
+  'second'
+  'third'
+  'fourth'
+  'fifth';
+  grid-gap: 20px;
+  padding-bottom: 50px;
+}
+	/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  .row {
+    display: grid;
+    grid-template-areas:
+    'one two three'
+    'four five six'
+    'seven eight nine'
+    'ten eleven twelve';
+    grid-gap: 20px;
+    padding-bottom: 50px;
+  }
+  .nav-right2 {
+      text-decoration: none;
+      position:relative;
+  }
+  .container {
+     display: grid;
+    grid-template-areas:
+    'first second third fourth fifth';
+  }
+}
